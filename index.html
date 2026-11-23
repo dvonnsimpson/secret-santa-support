@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Secret Santa</title>
+    <meta name="description" content="Help and frequently asked questions for Secret Santa, the gift exchange app for iPhone.">
+    <style>
+        :root {
+            --paper: #FBF5F0;
+            --card: #FFFFFF;
+            --ink: #2A1714;
+            --ink-muted: #6B5651;
+            --line: #EEDFD6;
+            --soft: #FBEDE8;
+            --accent: #B3261E;
+            --link: #B3261E;
+            --red: #B3261E;
+            --gold: #F5D27A;
+            --pine: #1F5C3A;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --paper: #1C1311;
+                --card: #2A1D1A;
+                --ink: #F7EDE8;
+                --ink-muted: #C2AEA8;
+                --line: #44302B;
+                --soft: #3A2723;
+                --accent: #F26B5F;
+                --link: #F26B5F;
+                --red: #F26B5F;
+                --pine: #5FB886;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background: var(--paper);
+            min-height: 100vh;
+            padding: 20px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .stripe {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 24px;
+        }
+
+        .stripe span {
+            height: 8px;
+            flex: 1;
+            border-radius: 4px;
+        }
+
+        h1, h2, h3 {
+            font-family: ui-serif, 'New York', Georgia, 'Times New Roman', serif;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        .subtitle {
+            color: var(--ink-muted);
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--link);
+        }
+
+        .contact-box {
+            background: var(--soft);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .contact-box a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            padding: 20px;
+            border-radius: 14px;
+            color: #2A1714;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 8px;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        .groups { background: #F6C9C4; }
+        .draw { background: #F5D27A; }
+        .profiles { background: #BFDCC8; }
+        .ask { background: #F3DDB0; }
+
+        .faq-item {
+            margin-bottom: 28px;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            color: var(--ink-muted);
+            padding-left: 20px;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            color: var(--ink-muted);
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 28px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .faq-answer {
+                padding-left: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stripe" aria-hidden="true">
+            <span style="background:var(--red)"></span>
+            <span style="background:var(--gold)"></span>
+            <span style="background:var(--pine)"></span>
+            <span style="background:var(--gold)"></span>
+            <span style="background:var(--red)"></span>
+        </div>
+        <h1>Secret Santa Support</h1>
+        <p class="subtitle">Draw names, swap ideas, keep the secret</p>
+
+        <h2>Need Help?</h2>
+        <div class="contact-box">
+            <p>Questions, feedback or something not working? Get in touch:</p>
+            <p style="margin-top: 15px;">
+                <strong>Email:</strong> <a href="mailto:dsimpsonseeds@gmail.com">dsimpsonseeds@gmail.com</a>
+            </p>
+        </div>
+
+        <h2>About the App</h2>
+        <p>Secret Santa runs your gift exchange for you. Start a group for your family, friends or office, invite everyone with a code, and draw names with one tap. Everyone sees only their own match. It runs on iPhone (iOS 26.5 or later), and you sign in with your Apple Account.</p>
+
+        <div class="features">
+            <div class="feature-card groups">
+                <h3>Groups</h3>
+                <p>Set a budget and an exchange date, then share the 6-character invite code. Be in as many groups as you like.</p>
+            </div>
+            <div class="feature-card draw">
+                <h3>The draw</h3>
+                <p>Draw names when everyone's in. Each person unwraps their own tag, and only they know who they got.</p>
+            </div>
+            <div class="feature-card profiles">
+                <h3>Gift profiles</h3>
+                <p>Add what you love, your favorite colors, your sizes and a few wish list ideas. Your Santa sees them.</p>
+            </div>
+            <div class="feature-card ask">
+                <h3>Ask</h3>
+                <p>Message your giftee to check a size or a color. They can answer, but they won't see who's asking.</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I start a Secret Santa?</div>
+            <div class="faq-answer">
+                <p>Tap <strong>+</strong> on the home screen, choose <strong>Create a Secret Santa</strong>, give your group a name, and set a budget and exchange date. Then tap <strong>Invite people</strong> to share the invite code. You're the organizer, so you're the one who draws names.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I join a group?</div>
+            <div class="faq-answer">
+                <p>Ask your organizer for the 6-character invite code. Tap <strong>+</strong>, choose <strong>Join with a code</strong>, and enter the code or paste their invite. Groups can't be joined after names are drawn.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How many people do I need?</div>
+            <div class="faq-answer">
+                <p>At least 3. In very small groups the draw still stays hidden, but people may be able to work out who has whom, so the app lets you know.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I keep two people from drawing each other?</div>
+            <div class="faq-answer">
+                <p>Yes. Before the draw, the organizer can add exclusions from the group screen. Pick two people and they won't draw each other, in either direction. It's handy for couples and roommates. If there are too many exclusions to make a fair draw, the app tells you instead of drawing.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can the organizer see who has whom?</div>
+            <div class="faq-answer">
+                <p>Only if they turn on <strong>Let me see all matches</strong> when setting up the group, and everyone in the group is shown that it's on. Otherwise nobody can see the matches, not even the organizer.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can we redraw names?</div>
+            <div class="faq-answer">
+                <p>No. Once names are drawn the draw is final, which keeps anyone from fishing for a different match. If you need to start over, the organizer can delete the group and make a new one.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are messages really anonymous?</div>
+            <div class="faq-answer">
+                <p>Yes. When you ask your giftee a question, they see it as coming from "your Santa". Your name is never attached, and the app doesn't record who sent it.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Someone left after names were drawn. What happens?</div>
+            <div class="faq-answer">
+                <p>Their Santa is given someone new, so nobody is left without a person to buy for.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I'm not getting notifications.</div>
+            <div class="faq-answer">
+                <p>Open the Settings app, tap <strong>Notifications &rarr; Secret Santa</strong>, and make sure <strong>Allow Notifications</strong> is on. The app sends reminders before the exchange and lets you know when names are drawn, when your match changes, and when you get a new message.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I delete my account?</div>
+            <div class="faq-answer">
+                <p>In the app, tap <strong>Me &rarr; Delete account</strong> and confirm with Apple. Your profile, wish lists and messages are deleted right away, and you're removed from every group. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What does the tip jar do?</div>
+            <div class="faq-answer">
+                <p>Nothing extra. Secret Santa is made by one person, and a tip helps keep it running. Tips are one-time purchases through Apple and are completely optional.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I found a bug. How do I report it?</div>
+            <div class="faq-answer">
+                <p>Please email <a href="mailto:dsimpsonseeds@gmail.com">dsimpsonseeds@gmail.com</a> with what happened, what you expected, and your iPhone model and iOS version. A screenshot helps a lot. Thank you!</p>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p style="margin-top: 10px;">&copy; 2026 Donovan Simpson. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
